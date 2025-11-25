@@ -11,7 +11,9 @@ function invertirValor() {
         inverso += numero[i];
     }
 
-    document.getElementById("salida3").textContent = inverso;
+   
+
+    mostrarAlertas('success',inverso);
 }
 
 
@@ -40,6 +42,16 @@ function calcularNota() {
     salida += calcular(C, "C");
     salida += calcular(D, "D");
 
-    document.getElementById("salida1").textContent = salida;
+    
+
+    mostrarAlertas('success',salida);
 }
+
+
+
+ function mostrarAlertas(tipo,texto){
+        const mensaje = document.getElementById("mensaje");
+        mensaje.className = `alert alert-${tipo}`;
+        mensaje.textContent = texto;
+    }
 
