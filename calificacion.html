@@ -21,25 +21,25 @@ fetch("navbar.html")
     <form class="mt-4">
         <div class="mb-3">
             <label class="form-label">Parcial 1</label>
-            <input type="number" class="form-control">
+            <input type="number" id="nota1"  class="form-control">
         </div>
 
         <div class="mb-3">
             <label class="form-label">Parcial 2</label>
-            <input type="number" class="form-control">
+            <input type="number" id="nota2" class="form-control">
         </div>
 
         <div class="mb-3">
             <label class="form-label">Parcial 3</label>
-            <input type="number" class="form-control">
+            <input type="number" id="nota3" class="form-control">
         </div>
 
-        <div class="mb-3">
-            <label class="form-label">Semestral</label>
-            <input type="number" class="form-control">
-        </div>
+       
 
-        <button class="btn btn-primary">Calcular</button>
+        <button class="btn btn-primary" onclick="calcularNota()">Calcular</button>
+         <div id="salida1"></div>
+         <script src="js/parcial3.js"></script>
+       
     </form>
 </div>
 
